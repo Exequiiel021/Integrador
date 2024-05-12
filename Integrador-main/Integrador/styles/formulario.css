@@ -67,7 +67,7 @@ main{
 
 /* es igual a la config de .historia-contenido p{} salvo el color*/
 .fuente{
-  color: wheat; 
+  color: bisque; 
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -79,13 +79,13 @@ textarea{
 }
 
 input, textarea, select{ 
-  color: #c2b4a0; 
+  color: #cac1b4; 
   display: block;
   padding: 0.3em 0px;
 }
 
 input::placeholder,textarea::placeholder{
-  color: #c2b4a0; 
+  color: #cac1b4; 
   ;
 }
 
@@ -118,3 +118,31 @@ select:focus{
 #rta p{
   font-size: 1.8rem;
 }
+
+#linkpoliticas{
+  font-family: inherit;
+  font-size: inherit;
+  color:#ff994f;
+}
+
+#linkpoliticas:link{
+  color:#ff994f;
+}
+
+#linkpoliticas:hover{
+  text-decoration: underline;
+}
+#linkpoliticas:active{
+  color:white;  
+}
+
+/* inisiste en dejarmelo en visited*/
+#linkpoliticas:visited{
+  color:#9c9286;
+}
+
+#formularioContacto p{
+  font-size: inherit;
+  color: rgb(248, 176, 60);
+}
+

@@ -50,14 +50,14 @@
                 <p>Somos expertos!!</p>
             </div>
             <form id="formularioContacto" method="post" autocomplete="on" onsubmit="rtaRegistrada()" target="_self">
-                <label for="name">Nombre:</label><br>
+                <label for="name">Nombre *</label><br>
                 <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido" required>
                 <br>
-                <label for="email">Correo electrónico:</label><br>
+                <label for="email">Correo electrónico *</label><br>
                 <input class="full-ancho renglon" type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
                 <br>
                   
-                <label for="tipoConsulta">Tipo de consulta:</label><br>
+                <label for="tipoConsulta">Tipo de consulta: *</label><br>
                 <select class="full-ancho renglon" id="tipoConsulta" name="tipoConsulta" required>
                     <option value=""> Seleccione una opción</option>
                     <option value="general">Pregunta general</option>
@@ -66,20 +66,27 @@
                 </select>
                 <br>
 
-                <label for="subject">Asunto:</label><br>
+                <label for="subject">Asunto *</label><br>
                 <input class="full-ancho renglon" type="text" id="subject" name="Asunto" placeholder="Asunto" required>
                 <br>
 
-                <label for="message">Mensaje:</label><br>
+                <label for="message">Mensaje *</label><br>
                 <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje" required></textarea>
                 <br>
+                
+                <input class="" type="file" required>
 
                 
                 <input class="inline" type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label>
+                <br>
+                <input class="inline" type="checkbox" id="privacidad" name="privacidad" value="accepted" required>
+                <label for="privacy"> * He leído y acepto la  <a id="linkpoliticas" href="#">Política de Privacidad</a> de MundoCafé.</label>
                 
                 <br>
-                    
+                <p>* Campos obligatorios.</p>
+                
+
                 <input class="full-ancho borde-full boton" type="submit" value="Enviar">
 
                 <div id="rta">
