@@ -41,3 +41,4 @@ function moveSlider(direction) {
         }
     }, {once: true}) // Eliminar el eventlistener despues de q se active
 }
+

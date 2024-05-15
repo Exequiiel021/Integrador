@@ -18,7 +18,7 @@ main{
 
 /* contiene el blur y toda la "columna de formulario" con un tamaño máximo = breakpoint mas chico y se queda ahí estancado. y el centrado con margin auto y sus hijos con stretcch*/
 .contacto{
-  color: wheat;
+  color: bisque;
   backdrop-filter: blur(20px);
 
   display: flex;
@@ -101,6 +101,7 @@ select:focus{
 .boton{
   margin: 1em 0em;
   padding: 0.5em 0em;
+  color: rgb(0, 0, 0);
 }
 
 .boton:hover{
@@ -118,6 +119,35 @@ select:focus{
 #rta p{
   font-size: 1.8rem;
 }
+
+/* campos obligaotrios */
+#formularioContacto p, .oblig{
+  font-size: inherit;
+  color: rgb(255, 187, 0);
+}                
+                
+
+
+
+/* ------MAPA------- */
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+/* ---- cosito de politias de privacidad ----- */
+
 
 #linkpoliticas{
   font-family: inherit;
@@ -141,8 +171,7 @@ select:focus{
   color:#9c9286;
 }
 
-#formularioContacto p{
-  font-size: inherit;
-  color: rgb(248, 176, 60);
+/* boton añadir archivo, no sé como sobreeescribir los estilos del botón aaaaaaa!*/
+input[type="file"]{
+  width: 100%;
 }
-

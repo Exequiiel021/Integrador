@@ -27,40 +27,6 @@ body {
     box-sizing: border-box;
 }
 
-/*efecto esmerilado index*/
-/* .subtitulo{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-image: url('../img/cafe.jpg');
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-attachment: relative;
-    background-size: cover;
-    display: grid;
-    align-items: center;
-   
-} */
-
-/* .presentacion {
-    width: 20em ;
-    height: 14em;
-    border: 4px solid rgba(250, 249, 249, 0.1);
-    margin: auto; 
-    backdrop-filter: blur(4px);
-    text-align: center;
-}
-
-.presentacion .efectoglass{
-    position: center;
-    background: #e7e0e02c;
-}
-.bajar {
-    color: white;
-    font-weight: 400;
-} */
-/* termina efector esmerilado index*/
-
 .bg {
     background-image: url(../img/cafe16final.webp);
     background-size: cover;
@@ -85,19 +51,8 @@ a {
 
 img {
     max-width: 100%;
-    height: 35rem;
+    
 }
-
-/*HEADER
-.header {
-    background-repeat: no-repeat;
-    height: 12rem;
-    background-position: absolute;
-    background-size: cover;
-    background-color: rgba(140, 134, 116, 0.3);
-    /* Ajusta la opacidad según tus preferencias
-    background-blend-mode: darken;
-} */
 
 h1 {
     margin: 0;
@@ -136,9 +91,6 @@ a {
     text-align: center;
     font-size: 2rem;
     color: white;
-    /* max-width: 800px; /* Ajusta el ancho máximo según tus necesidades 
-    margin-left: auto;
-    margin-right: auto; */
     font-family: "Caveat", cursive;
     padding-top: 15rem;
 }
@@ -388,17 +340,14 @@ p {
 
     .foto1 {
         grid-area: 1 / 1;
-        /* La primera imagen arriba */
     }
 
     .nombre1 {
         grid-area: 2 / 1;
-        /* El nombre de la primera imagen abajo */
     }
 
     .foto2,
     .nombre2 {
-        /* Elimina las áreas definidas previamente para foto2 y nombre2 */
         grid-area: initial;
     }
 }
@@ -449,7 +398,6 @@ li {
 .tipos-granos img {
     width: auto;
     height: 300px;
-    /* Establece la altura deseada */
     object-fit: cover;
 }
 
@@ -499,8 +447,6 @@ li {
     text-align: center;
 }
 
-
-
 @media screen and (max-width: 768px) {
     .barraNavegacion {
         min-height: 25rem;
@@ -511,7 +457,6 @@ li {
     }
 
 }
-
 
 @media (min-width:768px) {
     .barraNavegacion {
@@ -526,7 +471,7 @@ li {
 
 /* VIDEO */
 .video {
-    height: 78rem;
+    height: 75rem;
     min-height: 50rem;
     position: relative;
     overflow: hidden;
@@ -563,7 +508,7 @@ video {
 
 .contenido-video p {
     color: white;
-    background-color: rgba(247, 152, 27, 0.267);
+    background-color: rgba(247, 152, 27, 0.479);
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 2.4rem;
@@ -572,3 +517,174 @@ video {
     border-radius: 10px;
     font-family: "Indie Flower", cursive;
 }
+
+.intro-titulo{
+    text-align: center;
+    margin-top: 3rem;
+    font-family: "Indie Flower", cursive;
+}
+
+@media (min-width:768px) {
+    .contenido-intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3rem;
+        margin-bottom: 4rem;
+         
+    } 
+}
+
+@media (max-width:468px) {
+    .contenido-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contenido-intro img {
+    width: 100%;
+    height: auto; 
+}
+
+
+.intro-tipos{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.boton{
+    background-color: rgb(255, 187, 0);
+    padding: 1rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color: rgb(177, 130, 3);
+}
+
+.boton-enlace{
+    color: black;
+}
+
+@media (min-width:768px) {
+    .beneficios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+  .beneficios-texto {
+    padding: 20px; 
+    
+  }
+  
+  .beneficios-imagen img {
+    width: 100%;
+    height: auto; 
+
+  }
+
+ .beneficios{
+    margin-bottom: 2rem;
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+ } 
+  
+ @media (max-width: 767px) {
+    .beneficios-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .texto_1 {
+        grid-area: 1 / 1;
+        
+    }
+
+    .foto_1 {
+        grid-area: 2 / 1;
+        
+    }
+
+    .texto_2 {
+        grid-area: 3 / 1;
+        /* El segundo texto debajo de la primera foto */
+    }
+
+    .foto_2 {
+        grid-area: 4 / 1;
+        /* La segunda foto debajo del segundo texto */
+    }
+}
+
+/* GALERIA */
+@media (max-width:767px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .galeria-grid img {
+        object-fit: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .galeria-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:990px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+
+    .galeria-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.galeria-texto{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+}
+
+.galeria-grid{
+    margin-bottom: 5rem;
+}
+
+.beneficios-texto{
+    background-color: rgb(241, 235, 227);
+}
+
+
+
+
+
+  

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: SOL FER EXE,
+    Proyect: MundoCafe">
     
     <link rel="stylesheet" href="styles/formulario.css">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -17,33 +20,35 @@
 </head>
 
 <body>
-<header>
-    <div class="principal-nav">
-        <div class="logo">
-            <a href="index.html"><h1 class="titulo">Mundo<span class="negrita">Café</span> </h1></a>
+    <header>
+        <div class="principal-nav">
+            <div class="logo">
+                <a href="index.html">
+                    <h1 class="titulo">Mundo<span class="negrita">Café</span> </h1>
+                </a>
+            </div>
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><img class="menu" src="img/menu.svg" alt=""></label>
+
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="historia.html">Historia</a></li>
+                    <li> <a href="receta.html">Recetas</a>
+                        <ul>
+                            <li> <a href="latte.html">Latte</a></li>
+                            <li> <a href="capuccino.html">Capuccino</a></li>
+                            <li> <a href="iceCoffe.html">Ice Coffee</a></li>
+                            <li> <a href="receta.html#mas">Mas Recetas...</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    <input type="checkbox" id="toggle">
-    <label for="toggle"><img class="menu" src="img/menu.svg" alt=""></label>
+    </header>
 
-        <nav class="navigation">
-            <ul>
-                <li> <a href="historia.html">Historia</a></li>
-                <li> <a href="receta.html">Recetas</a>
-                    <ul>
-                        <li> <a href="internas/latte.html">Latte</a></li>
-                        <li> <a href="internas/capuccino.html">Capuccino</a></li>
-                        <li> <a href="internas/iceCoffe.html">Ice Coffee</a></li>
-                        <li> <a href="receta.html">Mas Recetas...</a></li>
-                    </ul>
-                </li>
-                <li> <a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <!--main-->
 
-<!--main-->   
-        
     <main>
         <section class="contacto fuente">
             <div id="tituloFormulario">
@@ -51,14 +56,16 @@
                 <p>Somos expertos!!</p>
             </div>
             <form id="formularioContacto" method="post" autocomplete="on" onsubmit="rtaRegistrada()" target="_self">
-                <label for="name">Nombre *</label><br>
-                <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido" required>
+                <label for="name">Nombre <span class="oblig">*</span></label><br>
+                <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido"
+                    required>
                 <br>
-                <label for="email">Correo electrónico *</label><br>
-                <input class="full-ancho renglon" type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                <label for="email">Correo electrónico <span class="oblig">*</span></label><br>
+                <input class="full-ancho renglon" type="email" id="email" name="email" placeholder="ejemplo@email.com"
+                    required>
                 <br>
-                  
-                <label for="tipoConsulta">Tipo de consulta: *</label><br>
+
+                <label for="tipoConsulta">Tipo de consulta <span class="oblig">*</span></label><br>
                 <select class="full-ancho renglon" id="tipoConsulta" name="tipoConsulta" required>
                     <option value=""> Seleccione una opción</option>
                     <option value="general">Pregunta general</option>
@@ -67,40 +74,41 @@
                 </select>
                 <br>
 
-                <label for="subject">Asunto *</label><br>
+                <label for="subject">Asunto <span class="oblig">*</span></label><br>
                 <input class="full-ancho renglon" type="text" id="subject" name="Asunto" placeholder="Asunto" required>
                 <br>
 
-                <label for="message">Mensaje *</label><br>
-                <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje" required></textarea>
+                <label for="message">Mensaje <span class="oblig">*</span></label><br>
+                <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje"required></textarea>
                 <br>
-                
                 <input class="" type="file" required>
-
                 
+                <br>
                 <input class="inline" type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label>
+
                 <br>
                 <input class="inline" type="checkbox" id="privacidad" name="privacidad" value="accepted" required>
                 <label for="privacy"> * He leído y acepto la  <a id="linkpoliticas" href="#">Política de Privacidad</a> de MundoCafé.</label>
-                
+
                 <br>
                 <p>* Campos obligatorios.</p>
-                
 
                 <input class="full-ancho borde-full boton" type="submit" value="Enviar">
 
                 <div id="rta">
-                <p>Se ha registrado su respuesta.</p>
+                    <p>Se ha registrado su respuesta.</p>
                 </div>
-                
             </form>
+
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.3703163874!2d-57.765343077742365!3d-38.01745163613915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715732223595!5m2!1ses-419!2sar"
+                    width="430" height="350" style="border: 5px solid #000;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <aside class="mapa">
-                <div id="mapa"></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.3703163874!2d-57.765343077742365!3d-38.01745163613915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715732223595!5m2!1ses-419!2sar" width="430" height="350" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </aside>
-        </section>    
+        </section>
     </main>
 
 
@@ -110,31 +118,32 @@
                 <a href="index.html">
                     <h1 class="logo__nombre">Mundo Café</h1>
                 </a>
-	            <!--iconos redes sociales-->
+                <!--iconos redes sociales-->
                 <div class="icon">
                     <div class="icons">
                         <span><a href="www.facebook.com" target="_blank">
-                            <img class="icon" src="img/face.png" alt="facebook">
-                        </a></span>
+                                <img class="icon" src="img/face.png" alt="facebook">
+                            </a></span>
                         <span><a href="https://github.com/" target="_blank">
-                            <img class="icon" src="img/github.png" alt="github">
-                        </a></span>
-                        <span><a href="https://www.google.com/"  target="_blank">
-                            <img class="icon" src="img/google.png" alt="google">
-                        </a></span>
-                        <span><a href="https://outlook.live.com/"  target="_blank">
-                            <img class="icon" src="img/email.png" alt="email">
-                        </a></span>
+                                <img class="icon" src="img/github.png" alt="github">
+                            </a></span>
+                        <span><a href="https://www.google.com/" target="_blank">
+                                <img class="icon" src="img/google.png" alt="google">
+                            </a></span>
+                        <span><a href="https://outlook.live.com/" target="_blank">
+                                <img class="icon" src="img/email.png" alt="email">
+                            </a></span>
                     </div>
                 </div>
 
                 <div>
                     <p class="footer-by">By Sol, Exe & Fer Group20</p>
                 </div>
-             </div>
+            </div>
         </div>
     </footer>
 
-<script src="js/formulario.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
+
 </html>

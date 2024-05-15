@@ -309,6 +309,8 @@ header a:hover{
 .description{
     font-size: 2rem;
     font-family: "Roboto Condensed", sans-serif;
+    color: rgb(236, 138, 72);
+    
 }
 
 .receta-cafe{
