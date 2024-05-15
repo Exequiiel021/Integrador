@@ -488,9 +488,11 @@ li {
     list-style-position: inline;
     height: 30px;
     text-align: center;
+    /*agregue estas lineas para animacion posterior*/
+    display: inline-block;
+    margin-right: 5px;
     /* margin-block-end: 4%; esto desalineaba los iconos respecto a su contendor */
 }
-
 
 .logo__nombre {
     color: rgb(131, 85, 29);

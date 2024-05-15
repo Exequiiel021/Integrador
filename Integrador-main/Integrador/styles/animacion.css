@@ -1,0 +1,49 @@
+/*transiciones y animaciones7*/
+/* index*/
+.contenido-video p:hover{
+    text-align: center;
+    background-color: rgb(74, 46, 1);
+    transition: background-color 2s;
+}
+
+/*footer icons*/
+.icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    
+}
+.footer .logo__nombre:hover{
+    transform: scale(1.4);
+    transition: transform 0.3s; 
+}
+.logo .titulo:hover{
+    transform: scale(1.4);
+    transition: transform 0.3s; 
+}
+
+/* Historia*/
+.historia-intro:hover,
+.historia-intro:focus{
+    cursor: zoom-in;
+    transition-duration: 2s;
+    transform: scale(1.3);
+}
+.elaboracion:hover,
+.elaboracion:focus{
+    cursor: zoom-in;
+    transition-duration: 2s;
+    transform: scale(1.3);
+}
+.tipos-granos:hover{
+    cursor: zoom-in;
+    transition-duration: 2s;
+    transform: scale(1.5);
+}
+
+.foto1:hover,
+.foto2:hover{
+    cursor: zoom-in;
+    transition-duration: 2s;
+    transform: scale(1.3);
+    }
+
